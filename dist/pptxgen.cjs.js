@@ -1,4 +1,4 @@
-/* PptxGenJS 3.3.0-beta @ 2020-08-13T04:21:43.006Z */
+/* PptxGenJS 3.3.0-beta @ 2020-12-07T03:20:21.386Z */
 'use strict';
 
 var JSZip = require('jszip');
@@ -3307,6 +3307,8 @@ function addImageDefinition(target, opt) {
         sizing: sizing,
         placeholder: opt.placeholder,
         rotate: opt.rotate || 0,
+        flipV: opt.flipV || false,
+        flipH: opt.flipH || false
     };
     // STEP 4: Add this image to this Slide Rels (rId/rels count spans all slides! Count all images to get next rId)
     if (strImgExtn === 'svg') {
